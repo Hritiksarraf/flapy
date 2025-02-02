@@ -10,7 +10,9 @@ let birdWidth = 34; //width/height ratio = 408/228 = 17/12
 let birdHeight = 24;
 let birdX = boardWidth/8;
 let birdY = boardHeight/2;
-let birdImg;
+// let birdImg;
+let birdImgs = [];
+let birdImgIndex = 0;
 
 let bird = {
     x : birdX,
@@ -37,6 +39,11 @@ let gravity = 0.4;
 let gameOver = false;
 let score = 0;
 
+let wingsound = new Audio("./sfx_wing.wav");
+let hitsound = new Audio("./sfx_hit.wav");
+let bgm = new Audio("./Petalburg_City.mp3")
+bgm.loop = true
+
 window.onload = function() {
     board = document.getElementById("board");
     board.height = boardHeight;
@@ -48,12 +55,16 @@ window.onload = function() {
     // context.fillRect(bird.x, bird.y, bird.width, bird.height);
 
     //load images
-    birdImg = new Image();
-    birdImg.src = "./flappybird.png";
-    birdImg.onload = function() {
-        context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
+    // birdImg = new Image();
+    // birdImg.src = "./flappybird.png";
+    // birdImg.onload = function() {
+    //     context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
+    // }
+    for (let i=0;i<4;i++){
+        let birdImg = new Image()
+        birdImg.src = `./flappybird${i}.png`
+        birdImgs.push(birdImg)
     }
-
     topPipeImg = new Image();
     topPipeImg.src = "./toppipe.png";
 
@@ -62,7 +73,11 @@ window.onload = function() {
 
     requestAnimationFrame(update);
     setInterval(placePipes, 1500); //every 1.5 seconds
+    setInterval(animateBird,100)
     document.addEventListener("keydown", moveBird);
+    document.addEventListener("mousedown", moveBird);
+    document.addEventListener("touchstart", moveBird);
+
 }
 
 function update() {
@@ -76,7 +91,10 @@ function update() {
     velocityY += gravity;
     // bird.y += velocityY;
     bird.y = Math.max(bird.y + velocityY, 0); //apply gravity to current bird.y, limit the bird.y to top of the canvas
-    context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
+    // context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
+    context.drawImage(birdImgs[birdImgIndex], bird.x, bird.y, bird.width, bird.height);
+    // birdImgIndex++;
+    // birdImgIndex %= birdImgs.length;
 
     if (bird.y > board.height) {
         gameOver = true;
@@ -94,6 +112,7 @@ function update() {
         }
 
         if (detectCollision(bird, pipe)) {
+            hitsound.play()
             gameOver = true;
         }
     }
@@ -110,7 +129,14 @@ function update() {
 
     if (gameOver) {
         context.fillText("GAME OVER", 5, 90);
+        bgm.pause()
+        bgm.currentTime = 0
     }
+}
+
+function animateBird(){
+    birdImgIndex++;
+    birdImgIndex %= birdImgs.length;
 }
 
 function placePipes() {
@@ -146,10 +172,15 @@ function placePipes() {
 }
 
 function moveBird(e) {
-    if (e.code == "Space" || e.code == "ArrowUp" || e.code == "KeyX") {
+    if (e.code == "Space" || e.code == "ArrowUp" || e.code == "KeyX" || e.type == "mousedown"|| 
+        e.type == "touchstart") {
         //jump
+        if(bgm.paused){
+            bgm.play();
+        }
+        
         velocityY = -6;
-
+        wingsound.play()
         //reset game
         if (gameOver) {
             bird.y = birdY;
