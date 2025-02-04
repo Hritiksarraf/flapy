@@ -3,7 +3,7 @@ import { connectToDB } from "@/lib/mongodb/connect";
 import { NextResponse } from "next/server";
 
 // api to get all users with rank for dashboard~
-export const GET = async (req, _) => {
+export const POST = async (req, _) => {
     try {
         await connectToDB();
         const users = await User.find().sort({ score: -1 }); // Sorting in descending order

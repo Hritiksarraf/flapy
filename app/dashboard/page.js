@@ -8,19 +8,29 @@ export default function Home() {
 const [visibleUsers, setVisibleUsers] = useState(5);
 const [users, setUsers] = useState([]);
 
-const getUsers= useCallback(async()=>{
+const getUsers = useCallback(async () => {
     try {
-        const response = await axios.get("/api/getAllUser");
-        if(!response.data.success){
-            console.log("failed to fetch user")
+        const response = await fetch("/api/getAllUser", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        });
+
+        const data = await response.json();
+
+        if (!data.success) {
+            console.log("failed to fetch user");
             return;
         }
-        setUsers(response.data.users);
-        console.log(response.data.users);
+
+        setUsers(data.users);
+        console.log(data.users);
     } catch (error) {
-        console.log("failed to fetch user")
+        console.log("failed to fetch user");
     }
-},[])   
+}, []);
+ 
 
 useEffect(() => {
     getUsers();
