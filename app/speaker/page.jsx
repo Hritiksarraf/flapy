@@ -8,6 +8,11 @@ const speakers = [
     description: "Lieutenant General Neeraj Varshney is the Commandant of the Military College of Electronics and Mechanical Engineering (MCEME) and the 75th Colonel Commandant of the Corps of EME. An NDA alumnus with 600K on insta, he has held key command positions, including leading a workshop in Srinagar during the Kargil War, commanding a battalion in Rajasthan, and overseeing weapon platform sustenance along the Line of Control in J&K. He also served as Brigadier for Space-based Technical Intelligence at the Defence Intelligence Agency and as Commandant of the EME School, Vadodara.",
   },
   {
+    image: "https://res.cloudinary.com/hritiksarraf/image/upload/v1738757789/WhatsApp_Image_2025-02-05_at_16.57.50_l2rpqo.jpg",
+    name: "Thajmola",
+    description: "Thaj, widely recognized by his Instagram handle @thajmola, is a distinguished Indian content creator celebrated for his distinctive and humorous perspectives on everyday life. His engaging content has garnered a substantial following, reflecting his deep connection with a diverse audience. Recently, Thaj expanded his creative pursuits into music with the release of the song \"Gomma\" in collaboration with ofRO, showcasing his versatility and passion for storytelling through this new medium. His unique approach and dedication have solidified his position as a leading figure in the digital content and creative landscape.",
+  },
+  {
     image: "https://res.cloudinary.com/hritiksarraf/image/upload/v1738759413/WhatsApp_Image_2025-02-05_at_16.59.06_xupvgf.jpg",
     name: "Asha Bhat",
     description: "Asha Bhat is a passionate singer and engineer who discovered her musical talent at the age of three. Trained in classical music for over 15 years, she later explored light and western music, which helped shape her versatility. Her journey into the Indian film industry began with Zee Kannada Sa Re Ga Ma Pa, where she gained recognition and collaborated with talented artists. While music remains her greatest passion, she chose to balance it with engineering to ensure it remains a source of joy rather than stress. Currently in her final year of engineering, Asha is set to work as an engineer while continuing her musical journey with unwavering dedication.",
@@ -31,12 +36,6 @@ const speakers = [
     image: "https://res.cloudinary.com/hritiksarraf/image/upload/v1738758396/WhatsApp_Image_2025-02-05_at_17.01.18_qquvgd.jpg",
     name: "Raghav",
     description: "Raghav’s journey is a testament to embracing change, taking risks, and following passion. An endurance athlete and mountaineer at heart, he understands the role of nutrition in optimizing performance and well-being. While working at Meta and Google, he relied on traditional supplements, but bloating, poor absorption, and inefficacy made him question if there was a better way.That’s when he discovered Patch Up, a brand that introduced him to transdermal patches—an innovative solution that fit seamlessly into his routine. The more he used them, the more he believed in their potential to transform wellness. But believing wasn’t enough. Despite the security of a high-profile career at Google, he made the difficult decision to leave and take a leap of faith—co-founding Patch Up alongside Radhika to make wellness simple, effective, and accessible to everyone. Today, Raghav is on a mission to revolutionize the way we think about supplementation, proving that health doesn’t have to be complicated—just well-delivered.",
-  },
-  
-  {
-    image: "https://res.cloudinary.com/hritiksarraf/image/upload/v1738757789/WhatsApp_Image_2025-02-05_at_16.57.50_l2rpqo.jpg",
-    name: "Thajmola",
-    description: "Thaj, widely recognized by his Instagram handle @thajmola, is a distinguished Indian content creator celebrated for his distinctive and humorous perspectives on everyday life. His engaging content has garnered a substantial following, reflecting his deep connection with a diverse audience. Recently, Thaj expanded his creative pursuits into music with the release of the song \"Gomma\" in collaboration with ofRO, showcasing his versatility and passion for storytelling through this new medium. His unique approach and dedication have solidified his position as a leading figure in the digital content and creative landscape.",
   },
 ];
 
