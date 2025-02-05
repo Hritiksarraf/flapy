@@ -5,17 +5,17 @@ const speakers = [
   {
     image: "https://res.cloudinary.com/hritiksarraf/image/upload/v1738757344/WhatsApp_Image_2025-01-28_at_13.28.56_iwrry9.jpg",
     name: "Lt Gen Neeraj Varshney",
-    description: "Lieutenant General Neeraj Varshney is the Commandant of the Military College of Electronics and Mechanical Engineering (MCEME) and the 75th Colonel Commandant of the Corps of EME. An NDA alumnus with 600K on insta, he has held key command positions, including leading a workshop in Srinagar during the Kargil War, commanding a battalion in Rajasthan, and overseeing weapon platform sustenance along the Line of Control in J&K. He also served as Brigadier for Space-based Technical Intelligence at the Defence Intelligence Agency and as Commandant of the EME School, Vadodara.",
+    description: "Lt Gen Neeraj Varshney, Commandant of MCEME and 75th Colonel Commandant of the Corps of EME, is an NDA alumnus. He led key commands, including a Srinagar workshop during Kargil, a battalion in Rajasthan, and weapon platform sustenance along the LoC. He also served as Brigadier for Space-based Technical Intelligence at the DIA and Commandant of EME School, Vadodara.",
   },
   {
     image: "https://res.cloudinary.com/hritiksarraf/image/upload/v1738757789/WhatsApp_Image_2025-02-05_at_16.57.50_l2rpqo.jpg",
     name: "Thajmola",
-    description: "Thaj, widely recognized by his Instagram handle @thajmola, is a distinguished Indian content creator celebrated for his distinctive and humorous perspectives on everyday life. His engaging content has garnered a substantial following, reflecting his deep connection with a diverse audience. Recently, Thaj expanded his creative pursuits into music with the release of the song \"Gomma\" in collaboration with ofRO, showcasing his versatility and passion for storytelling through this new medium. His unique approach and dedication have solidified his position as a leading figure in the digital content and creative landscape.",
+    description: "Thaj, known as @thajmola on Instagram, is a popular Indian content creator famed for his humorous take on everyday life. His engaging content has built a strong following, and he recently ventured into music with Gomma, collaborating with ofRO, showcasing his creative versatility.",
   },
   {
     image: "https://res.cloudinary.com/hritiksarraf/image/upload/v1738759413/WhatsApp_Image_2025-02-05_at_16.59.06_xupvgf.jpg",
     name: "Asha Bhat",
-    description: "Asha Bhat is a passionate singer and engineer who discovered her musical talent at the age of three. Trained in classical music for over 15 years, she later explored light and western music, which helped shape her versatility. Her journey into the Indian film industry began with Zee Kannada Sa Re Ga Ma Pa, where she gained recognition and collaborated with talented artists. While music remains her greatest passion, she chose to balance it with engineering to ensure it remains a source of joy rather than stress. Currently in her final year of engineering, Asha is set to work as an engineer while continuing her musical journey with unwavering dedication.",
+    description: "Asha Bhat, a passionate singer and engineer, discovered her talent at three and trained in classical music for 15+ years. Gaining recognition on Zee Kannada Sa Re Ga Ma Pa, she balances engineering with music, ensuring it remains a source of joy.",
   },
   {
     image: "https://res.cloudinary.com/hritiksarraf/image/upload/v1738759847/WhatsApp_Image_2025-02-05_at_18.20.13_cdrhhu.jpg",
@@ -25,17 +25,17 @@ const speakers = [
   {
     image: "https://res.cloudinary.com/hritiksarraf/image/upload/v1738757967/WhatsApp_Image_2025-02-05_at_17.48.55_uer2y7.jpg",
     name: "Radhika Rajpal",
-    description: "Radhika is a visionary entrepreneur redefining the way we approach wellness. A second-time founder and an alumna of Lady Shri Ram College (LSR) and INSEAD, she has an impressive background, having worked at Barclays and Microsoft before taking the leap into the startup world. After building her first venture, a London-based fintech backed by Techstars, she turned her attention to a challenge much closer to home—revolutionizing the health supplement industry. As the founder of Patch Up, India’s pioneering transdermal supplement brand, Radhika is leading the charge toward additive-free, high-absorption vitamin delivery. Her passion for clean nutrition stems from personal experience—struggling with bloating and inefficacy from traditional oral supplements, she discovered the power of transdermal patches. What started as a personal pursuit soon turned into a brand that made its way onto Shark Tank India, where her conviction and clarity impressed investors and audiences alike.",
+    description: "Radhika, an LSR and INSEAD alumna, founded Patch Up, India’s first transdermal supplement brand, after a career at Barclays, Microsoft, and a Techstars-backed fintech. Her innovation, inspired by personal health struggles, gained recognition on Shark Tank India.",
   },
   {
     image: "https://res.cloudinary.com/hritiksarraf/image/upload/v1738758199/WhatsApp_Image_2025-02-05_at_16.59.01_wsuvu5.jpg",
     name: "Lakshmi R Iyer",
-    description: "Lakshmi R Iyer is the Director & Creative Head at Elios Films Pvt. Ltd., known for her exceptional storytelling and creative vision. She has helmed acclaimed projects like First Second Chance, Seasoned with Love, and Aloo Bhujia (premiered at MAMI 2024), along with her upcoming films The Game, What’s Up Buddy, and 2050. With over a decade in the film industry, she has consistently pushed creative boundaries, earning recognition for her impactful narratives. As the Founder and CEO of Streetsmart Productions, she has cultivated a reputation for innovative independent filmmaking. Her journey from an Assistant Director and Production Assistant to a celebrated director showcases her passion, perseverance, and unmatched storytelling ability. Her work not only entertains but also deeply connects with audiences, solidifying her place as a trailblazer in modern cinema.",
+    description: "Lakshmi R Iyer, Director & Creative Head at Elios Films, is a visionary filmmaker behind First Second Chance, Seasoned with Love, and Aloo Bhujia (MAMI 2024). Founder of Streetsmart Productions, she has over a decade in the industry, evolving from AD to a celebrated director known for impactful storytelling and innovative filmmaking.",
   },
   {
     image: "https://res.cloudinary.com/hritiksarraf/image/upload/v1738758396/WhatsApp_Image_2025-02-05_at_17.01.18_qquvgd.jpg",
     name: "Raghav",
-    description: "Raghav’s journey is a testament to embracing change, taking risks, and following passion. An endurance athlete and mountaineer at heart, he understands the role of nutrition in optimizing performance and well-being. While working at Meta and Google, he relied on traditional supplements, but bloating, poor absorption, and inefficacy made him question if there was a better way.That’s when he discovered Patch Up, a brand that introduced him to transdermal patches—an innovative solution that fit seamlessly into his routine. The more he used them, the more he believed in their potential to transform wellness. But believing wasn’t enough. Despite the security of a high-profile career at Google, he made the difficult decision to leave and take a leap of faith—co-founding Patch Up alongside Radhika to make wellness simple, effective, and accessible to everyone. Today, Raghav is on a mission to revolutionize the way we think about supplementation, proving that health doesn’t have to be complicated—just well-delivered.",
+    description: "Raghav, an endurance athlete and ex-Meta & Google professional, co-founded Patch Up after discovering the benefits of transdermal supplements. Inspired by his own struggles with traditional supplements, he left his high-profile career to make wellness simple, effective, and accessible.",
   },
 ];
 
